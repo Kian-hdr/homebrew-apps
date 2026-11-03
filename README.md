@@ -1,9 +1,15 @@
 # Kian-hdr Homebrew Tap
 
-This tap distributes signed and Apple-notarized releases of
-[Just Aloud](https://github.com/Kian-hdr/just-aloud),
-[Longhaul](https://github.com/Kian-hdr/longhaul), and
-[Profile Deck](https://github.com/Kian-hdr/profile-deck).
+Install signed and Apple-notarized macOS apps. Each cask uses the same versioned DMG linked below.
+
+| App | Channel | Homebrew | Direct download |
+|---|---|---|---|
+| [Just Aloud](https://github.com/Kian-hdr/just-aloud) | Stable | `brew install --cask kian-hdr/tap/just-aloud` | [DMG](https://github.com/Kian-hdr/just-aloud/releases/download/just-aloud-v1.1.0/Just-Aloud-1.1.0.dmg) |
+| [Longhaul](https://github.com/Kian-hdr/longhaul) | Stable | `brew install --cask kian-hdr/tap/longhaul` | [DMG](https://github.com/Kian-hdr/longhaul/releases/download/v1.0.0/Longhaul-1.0.0-arm64.dmg) |
+| [Profile Deck](https://github.com/Kian-hdr/profile-deck) | Stable | `brew install --cask kian-hdr/tap/profile-deck` | [DMG](https://github.com/Kian-hdr/profile-deck/releases/download/v0.2.3/Profile-Deck-0.2.3-arm64.dmg) |
+| [Desk95](https://github.com/Kian-hdr/desk95) | Stable | `brew install --cask kian-hdr/tap/desk95` | [DMG](https://github.com/Kian-hdr/desk95/releases/download/v1.1.0/Desk95_v1.1.0_macOS_universal.dmg) |
+| [Signalperch](https://github.com/Kian-hdr/signalperch) | Preview | `brew install --cask kian-hdr/tap/signalperch-preview` | [DMG](https://github.com/Kian-hdr/signalperch/releases/download/v0.3.1/Signalperch_0.3.1_arm64.dmg) |
+| [Disc Porter](https://github.com/Kian-hdr/disc-porter) | Preview | `brew install --cask kian-hdr/tap/disc-porter` | [DMG](https://github.com/Kian-hdr/disc-porter/releases/download/v0.2.0/Disc_Porter_0.2.0_arm64.dmg) |
 
 ## Set up with your AI agent
 
@@ -14,11 +20,12 @@ permissions or configuration you need to complete yourself.
 
 ## Install
 
-```bash
-brew tap Kian-hdr/tap
-brew install --cask just-aloud
-brew install --cask longhaul
-brew install --cask profile-deck
+Run the command next to the app you want. If Homebrew asks you to trust a cask, tap the repository and trust that specific cask. For example, for Desk95:
+
+```sh
+brew tap kian-hdr/tap
+brew trust --cask kian-hdr/tap/desk95
+brew install --cask kian-hdr/tap/desk95
 ```
 
 To uninstall the app while keeping its settings:
