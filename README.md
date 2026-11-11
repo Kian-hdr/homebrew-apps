@@ -1,4 +1,4 @@
-# Kian-hdr Homebrew Apps
+<p align="center"><strong>Kian-hdr Homebrew Apps</strong></p>
 
 Shared Homebrew installers for Kian-hdr macOS apps. This repository contains cask definitions, not duplicate app source. Each cask uses the same signed and Apple-notarized versioned DMG linked below.
 
